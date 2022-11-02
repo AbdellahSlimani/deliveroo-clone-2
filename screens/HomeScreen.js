@@ -49,7 +49,7 @@ export default function HomeScreen() {
           />
           <View className="flex flex-1">
             <Text className='font-bold text-gray-500 text-xs'>Deliver Now!</Text>
-            <Text className='font-bold text-xl'>Curent Location
+            <Text className='font-bold text-xl'>Current Location
               <ChevronDownIcon size={20} color="#00ccbb"/></Text>
           </View>
 
@@ -79,7 +79,7 @@ export default function HomeScreen() {
               key={category._id}
               id={category._id}
               title={category.name}
-              description={category.short_descreption}
+              description={category.short_description}
               /> 
             )}
         </ScrollView>
