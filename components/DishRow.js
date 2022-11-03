@@ -31,7 +31,7 @@ const DishRow = ({
     dispatch(addToBasket({ id, name, description, price, image}))
   } 
   
-  const removeItemFronBasket = () => {
+  const removeItemFromBasket = () => {
     if(!items.length > 0) return;
     dispatch(removeFromBasket({ id }))
   }
@@ -62,7 +62,7 @@ const DishRow = ({
       {isPressed && (
         <View className="bg-white px-4">
           <View className="flex-row items-center space-x-2 pb-3" >
-            <TouchableOpacity disabled={!items.length} onPress={removeItemFronBasket}>
+            <TouchableOpacity disabled={!items.length} onPress={removeItemFromBasket}>
               <MinusCircleIcon 
                 color={items.length > 0 ? "#00ccbb" : "gray"}
                 size={40}
