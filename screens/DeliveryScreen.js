@@ -1,11 +1,11 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import { useSelector } from 'react-redux/es/exports'
 import { selectRestaurant } from '../features/RestaurantSlice'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import * as Progress from "react-native-progress"
 import { XMarkIcon } from 'react-native-heroicons/outline'
+import { useSelector } from 'react-redux'
 /* import MapView, { Marker } from 'react-native-maps' */
 
 const DeliveryScreen = () => {

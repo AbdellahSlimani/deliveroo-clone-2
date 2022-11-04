@@ -38,7 +38,6 @@ export default function HomeScreen() {
         setFeaturedCategories(data);
       });
   }, []);
-  console.log("homeScreen is here");
 
   return (
     <SafeAreaView className="bg-white pt-5">
