@@ -5,8 +5,8 @@ import { urlFor } from '../sanity';
 import {
   MinusCircleIcon, PlusCircleIcon
 } from 'react-native-heroicons/solid'
-import { useDispatch, useSelector } from 'react-redux/es/exports';
 import { addToBasket, selectBasketItemsWithId, removeFromBasket } from '../features/basketSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const DishRow = ({

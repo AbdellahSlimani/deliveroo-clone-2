@@ -6,10 +6,10 @@ import {
   ArrowLeftIcon,
   StarIcon,
     ChevronRightIcon,
-    LocationMarkerIcon,
   } from 'react-native-heroicons/solid'
 import { useDispatch } from 'react-redux'
 import { QuestionMarkCircleIcon } from 'react-native-heroicons/outline'
+import { MapPinIcon } from 'react-native-heroicons/solid'
 import DishRow from '../components/DishRow'
 import BasketIcon from '../components/BasketIcon'
 import { setRestaurant } from '../features/RestaurantSlice'
@@ -81,7 +81,7 @@ const RestaurantScreen = () => {
                   </Text>
                 </View>
                 <View className="flex-row items-center space-x-1">
-                  <LocationMarkerIcon color="gray" opacity={0.4} size={22}/>
+                  <MapPinIcon color="gray" opacity={0.4} size={22}/>
                   <Text className="text-xs text-gray-500"> Nearby · {address}</Text>
                 </View>
               </View>

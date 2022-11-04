@@ -4,9 +4,9 @@ import { useNavigation } from '@react-navigation/native'
 import { useSelector } from 'react-redux/es/exports'
 import { selectRestaurant } from '../features/RestaurantSlice'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { XIcon } from 'react-native-heroicons/solid'
 import * as Progress from "react-native-progress"
-import MapView, { Marker } from 'react-native-maps'
+import { XMarkIcon } from 'react-native-heroicons/outline'
+/* import MapView, { Marker } from 'react-native-maps' */
 
 const DeliveryScreen = () => {
 
@@ -18,7 +18,7 @@ const DeliveryScreen = () => {
       <SafeAreaView className="z-50">
         <View className="flex-row justify-between items-center p-5">
           <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-              <XIcon color="white" size={30}/>
+              <XMarkIcon color="white" size={30}/>
           </TouchableOpacity>
           <Text className="font-light text-white text-lg">Order Help</Text>
         </View>
@@ -39,7 +39,7 @@ const DeliveryScreen = () => {
             </View>
       </SafeAreaView>
 
-      <MapView 
+      {/* <MapView 
         initialRegion={{
           latitude: restaurant.lat,
           longitude: restaurant.long,
@@ -60,7 +60,7 @@ const DeliveryScreen = () => {
           pinColor='#00ccbb'
         />
         
-      </MapView>
+      </MapView> */}
 
       <SafeAreaView className="bg-white flex-row items-center space-x-5 h-28">
         <Image 

@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectRestaurant } from '../features/RestaurantSlice'
 import { removeFromBasket, selectBasketItems, selectBasketTotal } from '../features/basketSlice'
-import { XCircleIcon } from "react-native-heroicons/solid"
+import { XMarkIcon } from "react-native-heroicons/solid"
 import { urlFor } from '../sanity'
 import  Currency from "react-currency-formatter"
 
@@ -37,7 +37,7 @@ const BasketScreen = () => {
           <TouchableOpacity 
             onPress={navigation.goBack}
             className="rounded-full bg-gray-100 absolute top-3 right-5">
-            <XCircleIcon color="#00ccbb" width={50} height={50}/>
+            <XMarkIcon color="#00ccbb" width={50} height={50}/>
           </TouchableOpacity>
         </View>
 
@@ -83,13 +83,13 @@ const BasketScreen = () => {
             </Text>
           </View>
           <View className="flex-row justify-between">
-            <Text className="text-gray-400">Delivey Fee</Text>
+            <Text className="text-gray-400">Delivery Fee</Text>
             <Text className="text-gray-400">
               <Currency quantity={(basketTotal * 12.5 ) / 100} currency="GBP"/>
             </Text>
           </View>
           <View className="flex-row justify-between">
-            <Text className="">Delivey Total</Text>
+            <Text className="">Delivery Total</Text>
             <Text className="font-extrabold">
               <Currency quantity={basketTotal + 5.99} currency="GBP"/>
             </Text>
